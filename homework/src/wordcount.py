@@ -5,7 +5,7 @@
 import argparse
 import sys
 
-import .._internals.read_all_lines
+from  ._internals.read_all_lines import read_all_lines
 
 def parse_args():
 
@@ -21,3 +21,4 @@ def parse_args():
 
 def main():
     input_folder, output_folder = parse_args
+    lines = read_all_lines(input_folder)
